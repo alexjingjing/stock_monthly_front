@@ -1,2 +1,20 @@
 .logo{position: absolute; left: 0; top: 8px;}
 .logo img{width: 40px; height: 40px;}
+
+.panel {
+	border-radius: 0;
+}
+.panel-default {
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    box-shadow: none;
+    border-top-color: #999;
+}
+.panel-text {
+	font-weight: 600;border-left: 4px solid #666;padding-left: 10px;font-size: 16px;margin-bottom: 30px;
+	display: inline;
+}
+.panel-body {
+	padding-top: 30px;
+}

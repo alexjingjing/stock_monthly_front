@@ -1,4 +1,4 @@
-var app =angular.module('ShangChengApp',['ui.router', 'ngCookies'])
+var app =angular.module('StockApp',['ui.router', 'ngCookies'])
 var cookies;
 var http;
 var yearmonth;
@@ -8,6 +8,12 @@ var yearmonth;
             url:"/",
             templateUrl:"pages/home.html",
             controller:"HomeController"
+        })
+        .state("stock",{
+            url:"/stock",
+            templateUrl:"pages/stock.html",
+            controller:"StockController"
         });
+        $urlRouterProvider.otherwise("/");
     });
     

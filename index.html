@@ -27,7 +27,7 @@
   </head>
 
 	<!-- -->
-  <body ng-app="ShangChengApp" ng-controller="IndexController">
+  <body ng-app="StockApp" ng-controller="IndexController">
   	<div class="layui-layout layui-layout-admin">
 		  <div class="layui-header header header-demo">
 			  <div class="layui-main">
@@ -35,11 +35,11 @@
 			      <img src="assets/img/mind.png" alt="face_recognition" width="30px" height="30px">
 			    </a>
 			    <ul class="layui-nav">
-			      <li class="layui-nav-item layui-this">
+			      <li ng-class="getNavItemClass('/')">
 			        <a ui-sref="home">首页</a>
 			      </li>
-			      <li class="layui-nav-item">
-			        <a href="javascript:;">联系我们</a>
+			      <li ng-class="getNavItemClass('/stock')">
+			        <a ui-sref="stock">股票记录</a>
 			      </li>
 			      <li class="layui-nav-item">
 			        <a href="javascript:;">后台</a>
@@ -76,9 +76,7 @@
 			});
 		</script>
 		<script src="assets/js/highcharts/jquery.min.js"></script>
-		<script src="assets/js/highcharts/highcharts.js"></script>
-		<script src="assets/js/highcharts/exporting.js"></script>
-		<script src="assets/js/highcharts/highcharts-zh_CN.js"></script>
+		<script src="assets/js/echarts/echarts.common.min.js"></script>
 		<!--漂浮消息-->
 		<link href="assets/css/toastr.min.css" rel="stylesheet">
 		<script src="assets/js/toastr.min.js"></script>
@@ -94,9 +92,11 @@
 		<script src="js/app.js"></script>
 		<script src="js/config.js"></script>
 		<script src="js/httputil.js"></script>
+		<script src="js/chartConfig.js"></script>
 		<!--controller-->
 		<script src="js/controller/indexController.js"></script>
 		<script src="js/controller/homeController.js"></script>
+		<script src="js/controller/stockController.js"></script>
 		
 
   </body>
