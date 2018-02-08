@@ -1,0 +1,1 @@
+var HOST_URL = "../shangcheng";
