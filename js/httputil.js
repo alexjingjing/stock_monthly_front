@@ -10,6 +10,7 @@ function simplePostData(config) {
 		method = "POST";
 	}
 
+	var data = config.data;
 	//提交到服务器
 	config.$http({
 		method: method,

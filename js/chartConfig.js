@@ -188,8 +188,7 @@ getLineBarChart = function(data, option, scope) {
 		}],
 		yAxis: [{
 			type: 'value',
-			min: 0,
-			max: null,
+			scale:true,
 			axisLabel: {
 				formatter: '{value} $'
 			}
@@ -213,6 +212,7 @@ getLineBarChart = function(data, option, scope) {
 						width: 3
 					}
 				},
+				yAxisIndex: 0,
 				smooth: false,
 				data: data.series[0].data,
 				label: {

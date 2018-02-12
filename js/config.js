@@ -1,1 +1,1 @@
-var HOST_URL = "../shangcheng";
+var HOST_URL = "http://123.207.58.71";
